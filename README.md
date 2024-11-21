@@ -29,6 +29,7 @@ Save and Document Results:
 Capture the waveform output and include the results in your report for verification.
 
 Verilog Code:
+~~~
 
 module swap(clk);
 input clk;
@@ -39,13 +40,13 @@ a<=b;
 b<= a;
 end
 endmodule
-
+~~~
 Output: ![swap](https://github.com/user-attachments/assets/d4e976e5-6774-4850-a22a-b4769c65f713)
 
 
 
 Testbench for Swapping Three Numbers:
-
+~~~
 module swap(clk);
     input clk;
     reg [31:0] a = 32'd5;  // Fixed-point representation of real numbers
@@ -58,6 +59,7 @@ module swap(clk);
         b <= temp;
     end
 endmodule
+~~~
 
 Output: ![swa tb](https://github.com/user-attachments/assets/e30f63a8-92d2-4cb8-9b20-fb0662f60e0f)
 
